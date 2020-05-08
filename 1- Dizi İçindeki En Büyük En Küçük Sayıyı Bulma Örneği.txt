@@ -1,0 +1,33 @@
+var sayilar=new Array(16);[43,4,3,44,32,56,89,43,23,1,43,5,78,6,43,2];
+ var dusuk,yuksek;
+   /*-----------------------------------------------------------*/
+for(var i=0;i<sayilar.length;i++){
+    sayilar[i]=Math.floor(Math.random()*100);
+}
+
+dusuk = sayilar[0];
+yuksek = sayilar[0];   
+ 
+    /*---------------------------------------------------------*/
+
+for(var i=0;i<sayilar.length;i++)
+{
+    if (dusuk > sayilar[i])
+    {
+         dusuk= sayilar[i];
+    }
+ /*-------------------------------------------------------------*/   
+    if (yuksek < sayilar[i])  
+    {
+        yuksek = sayilar[i]; 
+    }
+}
+/*----------------------------------------------------------------*/
+for(var i=0;i<sayilar.length;i++)
+{
+    document.write(sayilar[i]+"<br>");
+}
+/*---------------------------------------------------------------*/
+document.write("----------------------------------------------" +"<br>");
+document.write("En büyük sayı: > > > " + yuksek+"<br>");
+document.write("En kucuk sayı: > > > " + dusuk+"<br>");
