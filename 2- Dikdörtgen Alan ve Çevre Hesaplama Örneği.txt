@@ -1,0 +1,28 @@
+<input type="text" id="kisa" placeholder="Kýsa Kenarý girin">
+<input type="text" id="uzun" placeholder="Uzun Kenarý girin">
+<input type="button" value="Hesapla" id="hesapla">
+       <script type="text/javascript" language="javascript">
+         
+
+ 
+function hesapla(){
+
+var kk=document.getElementById("kisa").value;
+var uk=document.getElementById("uzun").value;
+ 
+kk=Number(kk);
+uk=Number(uk);
+ 
+var alan=kk*uk;
+var cevre=(kk+uk)*2;
+alert("Dikdörtgen alaný:"+alan+" \n Dikdörtgen çevresi:"+cevre);
+ 
+ 
+}
+ 
+ 
+
+var hesapBtn=document.getElementById("hesapla");
+ 
+
+hesapBtn.onclick=hesapla;
